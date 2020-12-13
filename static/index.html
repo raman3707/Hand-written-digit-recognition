@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"> <!-- responsiveness in page-->
+      <title>Digit Recoognition</title> 
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+
+      body
+      {
+        background-image: url('raman.jpg');
+        background-color:white;
+        /* background-repeat: no-repeat;  */
+         background-size: cover; 
+        
+      }
+      #heading_1{
+        text-align: center;
+        background-color: chocolate ;
+
+
+      }
+      
+      #canvas {
+         
+          
+            border: 1px solid;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="raman.jpg" alt=" "> -->
+  
+
+
+    
+ 
+      <div id="heading_1">
+
+        <h1>Digit Recognition App</h1>
+      </div>
+ 
+      <center>
+      
+
+          <p id="prediction_text" style=" font-size: 40px;">Prediction:None</p>
+          <canvas id="canvas" width="300" height="300"></canvas>
+          <br><br>
+        
+           <button id="predict" type="button" class="btn btn-primary" style=" font-size: 30px;">Predict</button> 
+          <button id="clear" type="button" class="btn btn-danger" style=" font-size: 30px;">Clear</button>  
+          <!-- <button type="button" class="btn btn-primary">Predict</button>
+          <br><br>
+          
+          <button type="button" class="btn btn-danger">Clear</button> -->
+
+      </center>
+   
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="draw.js"></script>
+    <script src="predict.js"></script>
+  </body>
+</html>
